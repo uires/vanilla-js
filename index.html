@@ -6,16 +6,15 @@
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/index.css">
-
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	</head>
-	<body>
-
+	<body onload="onLoadCalcularImc();" style="margin-bottom: 50px;">
 		<header>
 			<div class="container">
 				<h1>Aparecida Nutrição</h1>
 			</div>
 		</header>
-		<main>
+		<main class="">
 			<section class="container">
 				<h2>Meus pacientes</h2>
 				<table>
@@ -69,9 +68,28 @@
 						</tr>
 					</tbody>
 				</table>
-
 			</section>
+			<form method="GET" class="container" id="cadastro-paciente">
+  				<div class="form-group">
+    				<label for="nome">Nome</label>
+    				<input type="text" class="form-control" id="nome">
+  				</div>
+  				<div class="form-group">
+    				<label for="peso">Peso</label>
+    				<input type="text" class="form-control" id="peso">
+  				</div>
+  				<div class="form-group">
+    				<label for="altura">Altura</label>
+    				<input type="text" class="form-control" id="altura">
+  				</div>
+  				<div class="form-group">
+    				<label for="gordura">Gordura</label>
+    				<input type="text" class="form-control" id="gordura">
+  				</div>
+  				<button id="cadastrar-paciente" type="submit" class="btn btn-primary">Cadastrar</button>
+  			</form>
 		</main>
-
+		<script type="text/javascript" src="js/default.js"></script>
+		<script type="text/javascript" src="js/pacienteCadastro.js"></script>
 	</body>
 </html>
