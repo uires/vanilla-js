@@ -4,8 +4,8 @@
 		<meta charset="UTF-8">
 		<title>Aparecida Nutrição</title>
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
-		<link rel="stylesheet" type="text/css" href="css/reset.css">
-		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" type="text/css" href="asserts/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="asserts/css/index.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	</head>
 	<body onload="onLoadCalcularImc();" style="margin-bottom: 50px;">
@@ -86,10 +86,13 @@
     				<label for="gordura">Gordura</label>
     				<input type="text" class="form-control" id="gordura">
   				</div>
-  				<button id="cadastrar-paciente" type="submit" class="btn btn-primary">Cadastrar</button>
+  				<button id="enviar-cadastro" type="submit" class="btn btn-primary">Cadastrar</button>
   			</form>
 		</main>
-		<script type="text/javascript" src="js/default.js"></script>
+		<script type="text/javascript" src="js/app/Default.js"></script>
 		<script type="text/javascript" src="js/pacienteCadastro.js"></script>
+		<script type="text/javascript" src="js/models/Paciente.js"></script>
+		<script type="text/javascript" src="js/app/actions/PacienteCadastro.js"></script>
+		<script type="text/javascript" src="js/app/helper/Util.js"></script>
 	</body>
 </html>
